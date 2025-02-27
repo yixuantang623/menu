@@ -1,0 +1,1339 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+TC:wght@100..900&family=Noto+Serif+TC:wght@200..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
+body, html {
+  height: 56.25vw;
+  width: 100vw;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+  vertical-align: top;
+}
+
+.Aanimation, .Banimation, .Canimation {
+  background-color: #1a1a1a;
+  height: 100%;
+  width: 100%;
+}
+
+.Acut1, .Acut2, .Acut3, .Bcut1, .Bcut2, .Bcut3, .Ccut1, .Ccut2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.Acut1 {
+  width: 100%;
+  height: 100%;
+}
+.Acut1 .new01 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 250%;
+  -webkit-animation: fontslide01 2.2s 1 linear forwards;
+          animation: fontslide01 2.2s 1 linear forwards;
+}
+.Acut1 .new02 {
+  position: absolute;
+  top: calc(50% * 16/9);
+  left: calc(50% * 9/16);
+  transform: translate(-50%, -50%);
+  width: 250%;
+  -webkit-animation: fontslide02 2.2s 1 linear forwards;
+          animation: fontslide02 2.2s 1 linear forwards;
+}
+
+@-webkit-keyframes fontslide01 {
+  0% {
+    top: 50%;
+    left: 50%;
+  }
+  70% {
+    top: calc(50% * 16/9);
+    left: calc(50% * 9/16);
+    opacity: 1;
+  }
+  95% {
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fontslide01 {
+  0% {
+    top: 50%;
+    left: 50%;
+  }
+  70% {
+    top: calc(50% * 16/9);
+    left: calc(50% * 9/16);
+    opacity: 1;
+  }
+  95% {
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes fontslide02 {
+  0% {
+    top: calc(50% * 16/9);
+    left: calc(50% * 9/16);
+  }
+  70% {
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+  }
+  95% {
+    top: calc(50% * 16/9);
+    left: calc(50% * 9/16);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fontslide02 {
+  0% {
+    top: calc(50% * 16/9);
+    left: calc(50% * 9/16);
+  }
+  70% {
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+  }
+  95% {
+    top: calc(50% * 16/9);
+    left: calc(50% * 9/16);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.Acut2 {
+  width: 100%;
+  height: 100%;
+  -webkit-animation: fadeOut 0.2s 1 linear 10s forwards;
+          animation: fadeOut 0.2s 1 linear 10s forwards;
+}
+.Acut2 .Atoptext {
+  width: 100%;
+  position: absolute;
+  top: 7%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: right;
+  padding-right: 8vw;
+}
+.Acut2 .newProduct {
+  color: #1a1a1a;
+  display: inline-block;
+  background: linear-gradient(45deg, #cfa353, #f8fab8, #dcbc47);
+  padding: 3px 16px;
+  font-size: clamp(0.6rem, 2vw, 1.2rem);
+  font-family: "Noto Serif TC";
+  font-weight: 800;
+  letter-spacing: 2px;
+  border-radius: 20px;
+  opacity: 0;
+  -webkit-animation: fontsFadein 0.6s 1 linear 2.5s forwards;
+          animation: fontsFadein 0.6s 1 linear 2.5s forwards;
+}
+.Acut2 .slogan {
+  font-family: "Noto Serif TC";
+  font-weight: 600;
+  color: #fff;
+  font-size: clamp(0.6rem, 2vw, 1.2rem);
+  padding-top: 15px;
+  letter-spacing: 1px;
+  opacity: 0;
+  -webkit-animation: fontsFadein 0.6s 1 linear 2.8s forwards;
+          animation: fontsFadein 0.6s 1 linear 2.8s forwards;
+}
+.Acut2 .productName {
+  font-family: "Noto Serif TC";
+  font-weight: 900;
+  font-size: clamp(2rem, 7vw, 10rem);
+  letter-spacing: 4px;
+  background: linear-gradient(45deg, #cfa353, #f8fab8, #dcbc47);
+  -webkit-background-clip: text;
+  color: transparent;
+  opacity: 0;
+  -webkit-animation: fontsFadein 0.6s 1 linear 3.1s forwards;
+          animation: fontsFadein 0.6s 1 linear 3.1s forwards;
+}
+.Acut2 .productNameEng {
+  font-family: "Noto Serif TC";
+  font-weight: 800;
+  font-size: clamp(0.7rem, 2.5vw, 1.3rem);
+  letter-spacing: 1px;
+  background: linear-gradient(45deg, #cfa353, #f8fab8, #dcbc47);
+  -webkit-background-clip: text;
+  color: transparent;
+  margin-bottom: 0;
+  padding-right: 6px;
+  opacity: 0;
+  -webkit-animation: fontsFadein 0.6s 1 linear 3.4s forwards;
+          animation: fontsFadein 0.6s 1 linear 3.4s forwards;
+}
+.Acut2 .Abttext {
+  width: 100%;
+  position: absolute;
+  bottom: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-left: 8vw;
+}
+.Acut2 .sweetprice {
+  font-family: "Noto Sans TC";
+  font-weight: 600;
+  font-size: clamp(0.6rem, 2vw, 1.2rem);
+  background: linear-gradient(45deg, #cfa353, #f8fab8, #dcbc47);
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: 5px;
+  display: inline-block;
+  border: solid #f8fab8 1px;
+  padding: 1px 10px 1px 14px;
+  border-radius: 20px;
+  margin-bottom: 0;
+  opacity: 0;
+  -webkit-animation: fontsFadein 0.6s 1 linear 3.7s forwards;
+          animation: fontsFadein 0.6s 1 linear 3.7s forwards;
+}
+.Acut2 .price {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: clamp(1rem, 8vw, 3.5rem);
+  background: linear-gradient(45deg, #cfa353, #f8fab8, #dcbc47);
+  -webkit-background-clip: text;
+  color: transparent;
+  opacity: 0;
+  -webkit-animation: fontsFadein 0.6s 1 linear 3.9s forwards;
+          animation: fontsFadein 0.6s 1 linear 3.9s forwards;
+}
+.Acut2 .price span {
+  font-family: "Montserrat";
+  font-size: clamp(3rem, 12vw, 16rem);
+  font-weight: 700;
+  margin-left: -10px;
+  background: linear-gradient(45deg, #cfa353, #f8fab8, #dcbc47);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.Acut2 .specialPrice {
+  font-family: "Montserrat", "Noto Sans TC";
+  font-size: clamp(0.4rem, 2.5vw, 1rem);
+  color: #fff;
+  letter-spacing: 1.5px;
+  margin-bottom: 0;
+  opacity: 0;
+  -webkit-animation: fontsFadein 0.6s 1 linear 4.3s forwards;
+          animation: fontsFadein 0.6s 1 linear 4.3s forwards;
+}
+.Acut2 .logo {
+  width: 18%;
+  min-width: 100px;
+  position: absolute;
+  bottom: 7%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  -webkit-animation: fontsFadein 0.5s 1 linear 2.1s forwards;
+          animation: fontsFadein 0.5s 1 linear 2.1s forwards;
+}
+.Acut2 .cherrypie {
+  width: 35%;
+  position: absolute;
+  top: -50%;
+  left: 50%;
+  transform: translate(-50%, -53%);
+  -webkit-animation: pieDrop 8.5s 1 ease-out 2.1s forwards;
+          animation: pieDrop 8.5s 1 ease-out 2.1s forwards;
+}
+.Acut2 .cherry01, .Acut2 .cherry02 {
+  width: 101%;
+  position: absolute;
+  left: 0;
+}
+.Acut2 .cherry01 {
+  top: 500%;
+  -webkit-animation: cherryUP01 8.5s 1 ease-out 2.1s forwards;
+          animation: cherryUP01 8.5s 1 ease-out 2.1s forwards;
+}
+.Acut2 .cherry02 {
+  top: 2400%;
+  -webkit-animation: cherryUP02 8.5s 1 ease-out 2.1s forwards;
+          animation: cherryUP02 8.5s 1 ease-out 2.1s forwards;
+}
+
+@-webkit-keyframes fontsFadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fontsFadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes pieDrop {
+  0% {
+    top: -50%;
+  }
+  10% {
+    top: 59.25%;
+  }
+  20% {
+    top: 57.75%;
+  }
+  30% {
+    top: 59.25%;
+  }
+  40% {
+    top: 57.75%;
+  }
+  50% {
+    top: 59.25%;
+  }
+  60% {
+    top: 57.75%;
+  }
+  70% {
+    top: 59.25%;
+  }
+  80% {
+    top: 57.75%;
+  }
+  90% {
+    top: 59.25%;
+  }
+  100% {
+    top: 59%;
+  }
+}
+@keyframes pieDrop {
+  0% {
+    top: -50%;
+  }
+  10% {
+    top: 59.25%;
+  }
+  20% {
+    top: 57.75%;
+  }
+  30% {
+    top: 59.25%;
+  }
+  40% {
+    top: 57.75%;
+  }
+  50% {
+    top: 59.25%;
+  }
+  60% {
+    top: 57.75%;
+  }
+  70% {
+    top: 59.25%;
+  }
+  80% {
+    top: 57.75%;
+  }
+  90% {
+    top: 59.25%;
+  }
+  100% {
+    top: 59%;
+  }
+}
+@-webkit-keyframes cherryUP01 {
+  0% {
+    top: 500%;
+  }
+  10% {
+    top: 0.5%;
+  }
+  20% {
+    top: -0.5%;
+  }
+  30% {
+    top: 0.5%;
+  }
+  40% {
+    top: -0.5%;
+  }
+  50% {
+    top: 0.5%;
+  }
+  60% {
+    top: -0.5%;
+  }
+  70% {
+    top: 0.5%;
+  }
+  80% {
+    top: -0.5%;
+  }
+  90% {
+    top: 0.5%;
+  }
+  100% {
+    top: 0;
+  }
+}
+@keyframes cherryUP01 {
+  0% {
+    top: 500%;
+  }
+  10% {
+    top: 0.5%;
+  }
+  20% {
+    top: -0.5%;
+  }
+  30% {
+    top: 0.5%;
+  }
+  40% {
+    top: -0.5%;
+  }
+  50% {
+    top: 0.5%;
+  }
+  60% {
+    top: -0.5%;
+  }
+  70% {
+    top: 0.5%;
+  }
+  80% {
+    top: -0.5%;
+  }
+  90% {
+    top: 0.5%;
+  }
+  100% {
+    top: 0;
+  }
+}
+@-webkit-keyframes cherryUP02 {
+  0% {
+    top: 2400%;
+  }
+  10% {
+    top: -0.5%;
+  }
+  20% {
+    top: 0.5%;
+  }
+  30% {
+    top: -0.5%;
+  }
+  40% {
+    top: 0.5%;
+  }
+  50% {
+    top: -0.5%;
+  }
+  60% {
+    top: 0.5%;
+  }
+  70% {
+    top: -0.5%;
+  }
+  80% {
+    top: 0.5%;
+  }
+  90% {
+    top: -0.5%;
+  }
+  100% {
+    top: 0;
+  }
+}
+@keyframes cherryUP02 {
+  0% {
+    top: 2400%;
+  }
+  10% {
+    top: -0.5%;
+  }
+  20% {
+    top: 0.5%;
+  }
+  30% {
+    top: -0.5%;
+  }
+  40% {
+    top: 0.5%;
+  }
+  50% {
+    top: -0.5%;
+  }
+  60% {
+    top: 0.5%;
+  }
+  70% {
+    top: -0.5%;
+  }
+  80% {
+    top: 0.5%;
+  }
+  90% {
+    top: -0.5%;
+  }
+  100% {
+    top: 0;
+  }
+}
+.Acut3 {
+  width: 100%;
+  -webkit-animation: fadeOut 0.2s 1 linear 11s forwards;
+          animation: fadeOut 0.2s 1 linear 11s forwards;
+}
+.Acut3 .mask, .Acut3 .logo2 {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+.Acut3 .mask {
+  -webkit-animation: logoMask 1.5s 1 ease-out 7.5s forwards;
+          animation: logoMask 1.5s 1 ease-out 7.5s forwards;
+}
+.Acut3 .logo2 {
+  -webkit-animation: logoFadein 2s 1 ease-out 9s forwards;
+          animation: logoFadein 2s 1 ease-out 9s forwards;
+}
+
+@-webkit-keyframes logoMask {
+  0% {
+    opacity: 1;
+    width: 1200%;
+  }
+  100% {
+    opacity: 1;
+    width: 100%;
+  }
+}
+
+@keyframes logoMask {
+  0% {
+    opacity: 1;
+    width: 1200%;
+  }
+  100% {
+    opacity: 1;
+    width: 100%;
+  }
+}
+@-webkit-keyframes logoFadein {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes logoFadein {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.Banimation .Bcut1, .Banimation .Bcut2, .Banimation .Bcut3 {
+  width: 100%;
+  height: 100%;
+}
+.Banimation .Bcut2 {
+  -webkit-animation: fadeOut 0.2s 1 linear 22s forwards;
+          animation: fadeOut 0.2s 1 linear 22s forwards;
+}
+.Banimation .title {
+  color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  font-weight: 800;
+  letter-spacing: 2px;
+  font-size: clamp(4rem, 24vw, 35rem);
+  margin-left: 0vw;
+  transform: translateY(-10%);
+  opacity: 0;
+  -webkit-animation: fontsFadein 0.3s 1 linear 11.1s forwards, titleSlide 1s 1 ease-out 11.2s forwards;
+          animation: fontsFadein 0.3s 1 linear 11.1s forwards, titleSlide 1s 1 ease-out 11.2s forwards;
+}
+.Banimation .toast01, .Banimation .tomato, .Banimation .lettuce, .Banimation .bacon, .Banimation .toast02 {
+  width: 32vw;
+  opacity: 0;
+}
+.Banimation .toast01 {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-20deg);
+  -webkit-animation: fontsFadein 0.3s 1 linear 11.1s forwards, toastRotate 1.5s 1 ease-out 12s forwards, titleSlide 1s 1 ease-out 14.3s forwards;
+          animation: fontsFadein 0.3s 1 linear 11.1s forwards, toastRotate 1.5s 1 ease-out 12s forwards, titleSlide 1s 1 ease-out 14.3s forwards;
+}
+.Banimation .tomato {
+  opacity: 1;
+  position: absolute;
+  top: -30%;
+  left: -30%;
+  transform-origin: center;
+  transform: translate(-50%, -50%);
+  -webkit-animation: tomatoRotate 1.2s 1 ease-out 12.4s forwards, titleSlide 1s 1 ease-out 14.3s forwards;
+          animation: tomatoRotate 1.2s 1 ease-out 12.4s forwards, titleSlide 1s 1 ease-out 14.3s forwards;
+}
+.Banimation .lettuce {
+  opacity: 1;
+  position: absolute;
+  top: -30%;
+  left: 130%;
+  transform-origin: center;
+  transform: translate(-50%, -50%);
+  -webkit-animation: lettuceRotate 1.2s 1 ease-out 12.4s forwards, titleSlide 1s 1 ease-out 14.3s forwards;
+          animation: lettuceRotate 1.2s 1 ease-out 12.4s forwards, titleSlide 1s 1 ease-out 14.3s forwards;
+}
+.Banimation .bacon {
+  opacity: 1;
+  position: absolute;
+  top: 150%;
+  left: 110%;
+  transform-origin: center;
+  transform: translate(-50%, -50%);
+  -webkit-animation: baconRotate 1.2s 1 ease-out 12.4s forwards, titleSlide 1s 1 ease-out 14.3s forwards;
+          animation: baconRotate 1.2s 1 ease-out 12.4s forwards, titleSlide 1s 1 ease-out 14.3s forwards;
+}
+.Banimation .toast02 {
+  opacity: 1;
+  width: 0;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-animation: toastPopin 0.6s 1 ease-out 13.9s forwards, titleSlide 1s 1 ease-out 14.3s forwards;
+          animation: toastPopin 0.6s 1 ease-out 13.9s forwards, titleSlide 1s 1 ease-out 14.3s forwards;
+}
+.Banimation .logo {
+  width: 18%;
+  min-width: 100px;
+  position: absolute;
+  bottom: 7%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  -webkit-animation: fontsFadein 0.5s 1 linear 11s forwards, fadeOut 0.2s 1 linear 22s forwards;
+          animation: fontsFadein 0.5s 1 linear 11s forwards, fadeOut 0.2s 1 linear 22s forwards;
+}
+
+@-webkit-keyframes titleSlide {
+  0% {
+    margin-left: 0vw;
+  }
+  60% {
+    margin-left: 0vw;
+  }
+  80% {
+    margin-left: -10vw;
+  }
+  90% {
+    margin-left: 100vw;
+  }
+  100% {
+    margin-left: 100vw;
+  }
+}
+
+@keyframes titleSlide {
+  0% {
+    margin-left: 0vw;
+  }
+  60% {
+    margin-left: 0vw;
+  }
+  80% {
+    margin-left: -10vw;
+  }
+  90% {
+    margin-left: 100vw;
+  }
+  100% {
+    margin-left: 100vw;
+  }
+}
+@-webkit-keyframes toastRotate {
+  0% {
+    transform: translate(-50%, -50%) rotate(-20deg);
+  }
+  20% {
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+@keyframes toastRotate {
+  0% {
+    transform: translate(-50%, -50%) rotate(-20deg);
+  }
+  20% {
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+@-webkit-keyframes tomatoRotate {
+  0% {
+    top: -15%;
+    left: -15%;
+    transform: translate(-50%, -50%) scale(3) rotate(0deg);
+  }
+  100% {
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1) rotate(720deg);
+  }
+}
+@keyframes tomatoRotate {
+  0% {
+    top: -15%;
+    left: -15%;
+    transform: translate(-50%, -50%) scale(3) rotate(0deg);
+  }
+  100% {
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1) rotate(720deg);
+  }
+}
+@-webkit-keyframes lettuceRotate {
+  0% {
+    top: -30%;
+    left: 130%;
+    transform: translate(-50%, -50%) scale(3) rotate(0deg);
+  }
+  100% {
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1) rotate(720deg);
+  }
+}
+@keyframes lettuceRotate {
+  0% {
+    top: -30%;
+    left: 130%;
+    transform: translate(-50%, -50%) scale(3) rotate(0deg);
+  }
+  100% {
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1) rotate(720deg);
+  }
+}
+@-webkit-keyframes baconRotate {
+  0% {
+    top: 150%;
+    left: 110%;
+    transform: translate(-50%, -50%) scale(3) rotate(0deg);
+  }
+  100% {
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1) rotate(720deg);
+  }
+}
+@keyframes baconRotate {
+  0% {
+    top: 150%;
+    left: 110%;
+    transform: translate(-50%, -50%) scale(3) rotate(0deg);
+  }
+  100% {
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1) rotate(720deg);
+  }
+}
+@-webkit-keyframes toastPopin {
+  0% {
+    width: 0;
+  }
+  40% {
+    width: 40vw;
+  }
+  100% {
+    width: 32vw;
+  }
+}
+@keyframes toastPopin {
+  0% {
+    width: 0;
+  }
+  40% {
+    width: 40vw;
+  }
+  100% {
+    width: 32vw;
+  }
+}
+.Bcut2 .Bltext {
+  width: 100%;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-left: 10vw;
+}
+.Bcut2 .member {
+  font-family: "Noto Sans TC";
+  font-weight: 600;
+  font-size: clamp(0.6rem, 2vw, 1.2rem);
+  color: #f46d1e;
+  letter-spacing: 5px;
+  display: inline-block;
+  border: solid #f46d1e 1px;
+  padding: 1px 10px 1px 14px;
+  border-radius: 20px;
+  opacity: 0;
+  -webkit-animation: fontsFadein 0.6s 1 linear 16.5s forwards;
+          animation: fontsFadein 0.6s 1 linear 16.5s forwards;
+}
+.Bcut2 .saleTitle {
+  font-family: "Noto Sans TC";
+  font-weight: 700;
+  font-size: clamp(1rem, 8vw, 7rem);
+  letter-spacing: 5px;
+  color: #fff;
+  opacity: 0;
+  -webkit-animation: fontsFadein 0.6s 1 linear 16.9s forwards;
+          animation: fontsFadein 0.6s 1 linear 16.9s forwards;
+}
+.Bcut2 .saleTitle span {
+  color: #f46d1e;
+}
+.Bcut2 .onePlusone {
+  font-family: "Montserrat", "Noto Sans TC";
+  color: #fff;
+  letter-spacing: 2.5px;
+  margin-bottom: 0;
+  margin-top: 30px;
+  font-size: clamp(0.7rem, 4vw, 3.5rem);
+  font-weight: 600;
+  padding-left: 1vw;
+  opacity: 0;
+  -webkit-animation: fontsFadein 0.6s 1 linear 17.3s forwards;
+          animation: fontsFadein 0.6s 1 linear 17.3s forwards;
+}
+.Bcut2 .onePlusone span {
+  color: #f46d1e;
+}
+.Bcut2 .Brimg {
+  position: absolute;
+  top: 15%;
+  left: 53%;
+  transform: translateX(-50%);
+}
+.Bcut2 .Brimg .sale {
+  position: absolute;
+  width: 20vw;
+  left: 16vw;
+  opacity: 0;
+  -webkit-animation: fontsFadein 0.6s 1 linear 16s forwards;
+          animation: fontsFadein 0.6s 1 linear 16s forwards;
+}
+.Bcut2 .Brimg .sandwichandcoffee {
+  position: absolute;
+  width: 42vw;
+  left: 50vw;
+  -webkit-animation: rightSlide 0.3s 1 linear 15.5s forwards;
+          animation: rightSlide 0.3s 1 linear 15.5s forwards;
+}
+
+.Bcut3 {
+  width: 100%;
+  -webkit-animation: fadeOut 0.2s 1 linear 23.5s forwards;
+          animation: fadeOut 0.2s 1 linear 23.5s forwards;
+}
+.Bcut3 .mask, .Bcut3 .logo2 {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+.Bcut3 .mask {
+  -webkit-animation: logoMask 1.5s 1 ease-out 20s forwards;
+          animation: logoMask 1.5s 1 ease-out 20s forwards;
+}
+.Bcut3 .logo2 {
+  -webkit-animation: logoFadein 2s 1 ease-out 21.5s forwards;
+          animation: logoFadein 2s 1 ease-out 21.5s forwards;
+}
+
+@-webkit-keyframes rightSlide {
+  0% {
+    left: 50vw;
+  }
+  100% {
+    left: 0vw;
+  }
+}
+
+@keyframes rightSlide {
+  0% {
+    left: 50vw;
+  }
+  100% {
+    left: 0vw;
+  }
+}
+.Canimation .Ccut1, .Canimation .Ccut2, .Canimation .Ccut3 {
+  width: 100%;
+  height: 100%;
+}
+.Canimation .logo {
+  width: 18%;
+  min-width: 100px;
+  position: absolute;
+  bottom: 7%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  -webkit-animation: fontsFadein 0.5s 1 linear 23.5s forwards, fadeOut 0.2s 1 linear 38s forwards;
+          animation: fontsFadein 0.5s 1 linear 23.5s forwards, fadeOut 0.2s 1 linear 38s forwards;
+}
+.Canimation .mvip, .Canimation .cvip {
+  font-family: "Noto Sans TC";
+  font-weight: 600;
+  font-size: clamp(0.6rem, 2vw, 1.2rem);
+  color: #fff;
+  letter-spacing: 4px;
+  display: inline-block;
+  background-color: #1a1a1a;
+  padding: 2px 10px 4px 14px;
+  border-radius: 20px;
+  margin-bottom: 0;
+  margin-top: 15px;
+  opacity: 0;
+}
+.Canimation .mprice, .Canimation .cprice {
+  font-family: "Montserrat", "Noto Sans TC";
+  font-size: clamp(0.7rem, 4vw, 3.5rem);
+  letter-spacing: 2px;
+  opacity: 0;
+}
+.Canimation .mprice span, .Canimation .cprice span {
+  font-weight: 600;
+  font-size: clamp(1.5rem, 8vw, 7rem);
+  font-weight: 700;
+}
+
+.Ccut1 {
+  -webkit-animation: fadeOut 0.2s 1 linear 38s forwards;
+          animation: fadeOut 0.2s 1 linear 38s forwards;
+}
+.Ccut1 .circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-84deg);
+  width: 160%;
+  opacity: 0;
+  -webkit-animation: fontsFadein 0.3s 1 linear 23.6s forwards, circleRotate1 1s ease-in 23.8s 1 forwards, circleRotate2 1s ease-in 28.8s 1 forwards;
+          animation: fontsFadein 0.3s 1 linear 23.6s forwards, circleRotate1 1s ease-in 23.8s 1 forwards, circleRotate2 1s ease-in 28.8s 1 forwards;
+}
+.Ccut1 .coffee1 {
+  position: absolute;
+  top: 40%;
+  left: -20%;
+  transform: translate(-50%, -50%);
+  width: 25vw;
+  -webkit-animation: coffeeSlide 0.25s ease-in 24.5s 1 forwards, fadeOut 0.2s 1 linear 28.5s forwards;
+          animation: coffeeSlide 0.25s ease-in 24.5s 1 forwards, fadeOut 0.2s 1 linear 28.5s forwards;
+}
+.Ccut1 .mint1 {
+  position: absolute;
+  top: -50%;
+  left: 23%;
+  transform: translate(-50%, -50%);
+  width: 20vw;
+  -webkit-animation: mintdrop 4s ease-out 25s 1 forwards, fadeOut 0.2s 1 linear 28.5s forwards;
+          animation: mintdrop 4s ease-out 25s 1 forwards, fadeOut 0.2s 1 linear 28.5s forwards;
+}
+.Ccut1 .mtext {
+  position: absolute;
+  right: 8vw;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff;
+  font-family: "Montserrat", "Noto Sans TC";
+  text-align: right;
+  letter-spacing: 2px;
+}
+.Ccut1 .menthawashed {
+  font-size: clamp(1rem, 3vw, 3rem);
+  line-height: 1.35;
+  font-weight: 600;
+  opacity: 0;
+  -webkit-animation: fontsFadein 0.4s 1 linear 25.3s forwards, fadeOut 0.2s 1 linear 28.1s forwards;
+          animation: fontsFadein 0.4s 1 linear 25.3s forwards, fadeOut 0.2s 1 linear 28.1s forwards;
+}
+.Ccut1 .menthawashedEng {
+  font-size: clamp(0.6rem, 1.8vw, 1.7rem);
+  line-height: 1.45;
+  font-weight: 600;
+  opacity: 0;
+  -webkit-animation: fontsFadein 0.4s 1 linear 25.6s forwards, fadeOut 0.2s 1 linear 28.4s forwards;
+          animation: fontsFadein 0.4s 1 linear 25.6s forwards, fadeOut 0.2s 1 linear 28.4s forwards;
+}
+.Ccut1 .mvip {
+  -webkit-animation: fontsFadein 0.4s linear 25.9s 1 forwards, fadeOut 0.2s 1 linear 28.5s forwards;
+          animation: fontsFadein 0.4s linear 25.9s 1 forwards, fadeOut 0.2s 1 linear 28.5s forwards;
+}
+.Ccut1 .mprice {
+  -webkit-animation: fontsFadein 0.4s linear 26.2s 1 forwards, fadeOut 0.2s 1 linear 28.5s forwards;
+          animation: fontsFadein 0.4s linear 26.2s 1 forwards, fadeOut 0.2s 1 linear 28.5s forwards;
+}
+.Ccut1 .coffee2 {
+  position: absolute;
+  top: 45%;
+  left: 120%;
+  transform: translate(-50%, -50%);
+  width: 23vw;
+  -webkit-animation: coffee2Slide 0.25s ease-in 29.8s 1 forwards;
+          animation: coffee2Slide 0.25s ease-in 29.8s 1 forwards;
+}
+.Ccut1 .lemon1 {
+  position: absolute;
+  top: 150%;
+  left: 83%;
+  transform: translate(-50%, -50%);
+  width: 21vw;
+  -webkit-animation: lemonup 4s ease-out 30.3s 1 forwards;
+          animation: lemonup 4s ease-out 30.3s 1 forwards;
+}
+.Ccut1 .ctext {
+  position: absolute;
+  left: 8vw;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff;
+  font-family: "Montserrat", "Noto Sans TC";
+  letter-spacing: 2px;
+}
+.Ccut1 .citricnatural {
+  font-size: clamp(1rem, 3vw, 3rem);
+  line-height: 1.35;
+  font-weight: 600;
+  opacity: 0;
+  -webkit-animation: fontsFadein 0.4s 1 linear 30.6s forwards;
+          animation: fontsFadein 0.4s 1 linear 30.6s forwards;
+}
+.Ccut1 .citricnaturalEng {
+  font-size: clamp(0.6rem, 1.8vw, 1.7rem);
+  line-height: 1.45;
+  font-weight: 600;
+  opacity: 0;
+  -webkit-animation: fontsFadein 0.4s 1 linear 30.9s forwards;
+          animation: fontsFadein 0.4s 1 linear 30.9s forwards;
+}
+.Ccut1 .cvip {
+  -webkit-animation: fontsFadein 0.4s linear 31.2s 1 forwards;
+          animation: fontsFadein 0.4s linear 31.2s 1 forwards;
+}
+.Ccut1 .cprice {
+  -webkit-animation: fontsFadein 0.4s linear 31.5s 1 forwards;
+          animation: fontsFadein 0.4s linear 31.5s 1 forwards;
+}
+
+@-webkit-keyframes circleRotate1 {
+  0% {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-84deg);
+  }
+  100% {
+    top: 40%;
+    left: 33%;
+    transform: translate(-50%, -50%) rotate(151deg);
+  }
+}
+
+@keyframes circleRotate1 {
+  0% {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-84deg);
+  }
+  100% {
+    top: 40%;
+    left: 33%;
+    transform: translate(-50%, -50%) rotate(151deg);
+  }
+}
+@-webkit-keyframes coffeeSlide {
+  0% {
+    left: -20%;
+  }
+  100% {
+    left: 33%;
+  }
+}
+@keyframes coffeeSlide {
+  0% {
+    left: -20%;
+  }
+  100% {
+    left: 33%;
+  }
+}
+@-webkit-keyframes coffee2Slide {
+  0% {
+    left: 120%;
+  }
+  100% {
+    left: 67%;
+  }
+}
+@keyframes coffee2Slide {
+  0% {
+    left: 120%;
+  }
+  100% {
+    left: 67%;
+  }
+}
+@-webkit-keyframes mintdrop {
+  0% {
+    top: -50%;
+  }
+  10% {
+    top: 50.5%;
+  }
+  20% {
+    top: 49.5%;
+  }
+  30% {
+    top: 50.5%;
+  }
+  40% {
+    top: 49.5%;
+  }
+  50% {
+    top: 50.5%;
+  }
+  60% {
+    top: 49.5%;
+  }
+  70% {
+    top: 50.5%;
+  }
+  80% {
+    top: 49.5%;
+  }
+  90% {
+    top: 50.5%;
+  }
+  100% {
+    top: 50%;
+  }
+}
+@keyframes mintdrop {
+  0% {
+    top: -50%;
+  }
+  10% {
+    top: 50.5%;
+  }
+  20% {
+    top: 49.5%;
+  }
+  30% {
+    top: 50.5%;
+  }
+  40% {
+    top: 49.5%;
+  }
+  50% {
+    top: 50.5%;
+  }
+  60% {
+    top: 49.5%;
+  }
+  70% {
+    top: 50.5%;
+  }
+  80% {
+    top: 49.5%;
+  }
+  90% {
+    top: 50.5%;
+  }
+  100% {
+    top: 50%;
+  }
+}
+@-webkit-keyframes lemonup {
+  0% {
+    top: 150%;
+  }
+  10% {
+    top: 65.5%;
+  }
+  20% {
+    top: 64.5%;
+  }
+  30% {
+    top: 65.5%;
+  }
+  40% {
+    top: 64.5%;
+  }
+  50% {
+    top: 65.5%;
+  }
+  60% {
+    top: 64.5%;
+  }
+  70% {
+    top: 65.5%;
+  }
+  80% {
+    top: 64.5%;
+  }
+  90% {
+    top: 65.5%;
+  }
+  100% {
+    top: 65%;
+  }
+}
+@keyframes lemonup {
+  0% {
+    top: 150%;
+  }
+  10% {
+    top: 65.5%;
+  }
+  20% {
+    top: 64.5%;
+  }
+  30% {
+    top: 65.5%;
+  }
+  40% {
+    top: 64.5%;
+  }
+  50% {
+    top: 65.5%;
+  }
+  60% {
+    top: 64.5%;
+  }
+  70% {
+    top: 65.5%;
+  }
+  80% {
+    top: 64.5%;
+  }
+  90% {
+    top: 65.5%;
+  }
+  100% {
+    top: 65%;
+  }
+}
+@-webkit-keyframes circleRotate2 {
+  0% {
+    top: 40%;
+    left: 33%;
+    transform: translate(-50%, -50%) rotate(151deg);
+  }
+  100% {
+    top: 45%;
+    left: 67%;
+    transform: translate(-50%, -50%) rotate(474deg);
+  }
+}
+@keyframes circleRotate2 {
+  0% {
+    top: 40%;
+    left: 33%;
+    transform: translate(-50%, -50%) rotate(151deg);
+  }
+  100% {
+    top: 45%;
+    left: 67%;
+    transform: translate(-50%, -50%) rotate(474deg);
+  }
+}
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.Ccut2 {
+  width: 100%;
+  -webkit-animation: fadeOut 0.2s 1 linear 41s forwards;
+          animation: fadeOut 0.2s 1 linear 41s forwards;
+}
+.Ccut2 .mask, .Ccut2 .logo2 {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+.Ccut2 .mask {
+  -webkit-animation: logoMask 1.5s 1 ease-out 35.5s forwards;
+          animation: logoMask 1.5s 1 ease-out 35.5s forwards;
+}
+.Ccut2 .logo2 {
+  -webkit-animation: logoFadein 2s 1 ease-out 37s forwards;
+          animation: logoFadein 2s 1 ease-out 37s forwards;
+}
