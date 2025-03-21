@@ -1337,3 +1337,6 @@ body, html {
   -webkit-animation: logoFadein 2s 1 ease-out 37s forwards;
           animation: logoFadein 2s 1 ease-out 37s forwards;
 }
+.Banimation , .Canimation{
+  display: none
+  }
