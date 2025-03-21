@@ -1,4 +1,4 @@
-document.querySelector('.Ccut2').addEventListener('animationend', () => {
+document.querySelector('.Acut3').addEventListener('animationend', () => {
   // 在 .Ccut2 播放完畢後延遲 0.2 秒再觸發重置動畫
   setTimeout(() => {
     const animationElements = document.querySelectorAll('.Aanimation * , .Banimation * , .Canimation *');
