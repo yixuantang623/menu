@@ -1338,6 +1338,3 @@ body, html {
           animation: logoFadein 2s 1 ease-out 37s forwards;
 }
 
-.Banimation, .Canimation {
-display: none;
-}
